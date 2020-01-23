@@ -1,0 +1,6 @@
+//la sintesi sottrattiva è una sintesi che sottrae la frequenza del suono, il suono a sua volta passa in uno spettroscopio che fa vedere il segnale del dominio nella frequenza,significa che a sinistra c'è (0) e a destra c'è un numero più grande;
+//il filtro lowpass o filtro passa basso è un filtro che attenua porzioni di spettro sopra una frequenza data;
+//band pass fit (BPF) significa passa banda;
+//highpass o filtro passa alto;
+import("stdfaust.lib");
+process = no.noise : fi.lowpass(2,6000) : fi.highpass(2,6000);
